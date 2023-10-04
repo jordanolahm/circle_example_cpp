@@ -3,6 +3,11 @@
 #include <iostream>
 #include <cmath>
 
+
+//default constructor
+Circulo::Circulo() : raioInicial{0}, x{0}, y{0} {}
+
+//constructor received params
 Circulo::Circulo(double raioInicial, double x, double y) {
     raio = raioInicial;
     centroX = x;

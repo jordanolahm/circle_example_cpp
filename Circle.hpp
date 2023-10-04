@@ -12,12 +12,17 @@ private:
     double calcularDistanciaEntreCentros(const Circulo& outroCirculo);
 
 public:
-    
-    Circulo(double raioInicial = 0, double x = 0, double y = 0);
+
+    //default constructor
+    Circulo(double raioInicial, double x, double y);
 
     void definirRaio(double novoRaio);
+    
     void aumentarRaio(double percentualAumento);
+    
     void definirCentro(double x, double y);
+    
+    //Function not return value
     void imprimirRaio();
     void imprimirCentro();
     void imprimirArea();
